@@ -1,8 +1,11 @@
 server:
-  port: 8887
+  port: 8081
+
 spring:
-  application:
-    name: config-server
+  security:
+    user:
+      name: develop
+      password: develop
 
   cloud:
     config:
@@ -12,3 +15,8 @@ spring:
           search-paths: config-data
           default-label: "main"
 
+  application:
+    name: serverconfig
+
+  profiles:
+    active: dev
