@@ -19,4 +19,4 @@ spring:
     name: serverconfig
 
   profiles:
-    active: dev
+    active: test
